@@ -13,13 +13,13 @@ In this case study, the primary objective is to organize and prepare data for a 
 
 The **raw data** for this case study is the **Tourism** data located in **CR** library.
 
-[screenshot 1]
+![screenshot1](https://github.com/MaxineXiong/Wourld_Tourism_Data_Preparation/assets/55864839/cd59c0aa-c5e8-4947-ad7b-ca7f9c978a0d)
 
 The final table should be a combination of the **cleaned_tourism** table and the **country_info** table.
 
 See the example of **desired outcome** below:
 
-[screenshot 2]
+![screenshot2](https://github.com/MaxineXiong/Wourld_Tourism_Data_Preparation/assets/55864839/25eea279-ea1b-48c9-8231-3081129fc3cf)
 
 ### Data Requirements
 
@@ -28,9 +28,9 @@ Create the **cleaned_tourism** table with the following column requirements:
 - **Country_Name** – contains the country name from the original Country column.
 - **Tourism_Type** – contains the type of tourism from the original Country column. Valid values are Inbound tourism or Outbound tourism.
 - **Category** – contains category names by extracting and modifying values from the original **Country** column. There should be six distinct values for **Category** as shown in the table below:
-    
-    [screenshot 3]
-    
+
+<img src = 'https://github.com/MaxineXiong/Wourld_Tourism_Data_Preparation/assets/55864839/4ffaa71f-fe83-4c5a-a764-2b1a7de5704f' width = 800></img>
+
 - **Series** – All values should be in uppercase and data that is not available (coded as "..") should be changed to a missing character value.
 - **Y2014** – contains numeric values that are calculated from the scaled character values in the original **_2014** year column. The scaled values are multiplied by either thousands or millions (abbreviated Mn), depending on the value listed for category in the Country column. The new **Y2014** values should be formatted with the COMMA format.
     - Example: if the category is **Travel - US$ MN** and the value for **_2014** is 4.26, **Y2014** is equal to 4.26 * 1000000, or 4,260,000.
