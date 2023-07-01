@@ -72,7 +72,7 @@ TSA-Claims-Data-Analysis
 - **README.md**: This file provides an overview of the repository, including descriptions of the case study and relevant information for usage.
 - **LICENSE**: The license file for the project.
 
-Please note that the **World_Tourism_Data_Preparation.sas** program should be used as the primary entry point for data analysis, while **ECRB94/createdataCRB_oda.sas** sets up the required environment to execute the data preparation program successfully.
+Please note that the **World_Tourism_Data_Preparation.sas** program should be used as the primary entry point for data preparation, while **ECRB94/createdataCRB_oda.sas** sets up the required environment to execute the data preparation program successfully.
 
 <br>
 
