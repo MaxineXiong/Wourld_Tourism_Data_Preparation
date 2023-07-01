@@ -40,17 +40,17 @@ run;
 /* 10. Create a format for the Continent column that labels continent IDs with the corresponding continent names */
 proc format;
 value CONTFMT 1 = 'North America'
-	          2 = 'South America'
-	          3 = 'Europe'
-	          4 = 'Africa'
-	          5 = 'Asia'
-	          6 = 'Oceania'
-	          7 = 'Antarctica';
+	      2 = 'South America'
+	      3 = 'Europe'
+	      4 = 'Africa'
+	      5 = 'Asia'
+	      6 = 'Oceania'
+	      7 = 'Antarctica';
 run;
 
  
 /* 11. Merge the cleaned_tourism table with a sorted version of country_info to create the final_tourism table. 
-	   Include only matches in the output table. Use the new format to format Continent */
+       Include only matches in the output table. Use the new format to format Continent */
 proc sort data = cr.cleaned_tourism out = cleaned_tourism;
 by Country_Name;
 run;
@@ -71,7 +71,7 @@ run;
 
 
 /* 12. Create the NoCountryFound table that has a list of countries from cleaned_tourism that are not found in the country_info table.
-   	   This table should have only one row for each country. */
+       This table should have only one row for each country. */
 data NoCountryFound(keep = Country_Name);
 merge cleaned_tourism(in = A) country_info(in = B);
 by Country_Name;
